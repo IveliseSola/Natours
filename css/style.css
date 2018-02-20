@@ -131,3 +131,10 @@ padding: 30px;
     background-color:#fff;
     color: #777777;
 }
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
