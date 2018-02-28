@@ -143,8 +143,14 @@ padding: 30px;
     top:0;
     left:0;
     z-index: -1;
+    transition: all .4s;
 }
 
-btn-white::after{
+.btn-white::after{
     background-color: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
