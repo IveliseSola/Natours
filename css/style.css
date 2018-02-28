@@ -91,6 +91,7 @@ padding: 30px;
         transform: translate(0) ;
     }
 }
+
 @keyframes moveInRight{
     0%{
         opacity: 0;
@@ -99,6 +100,18 @@ padding: 30px;
 
     80%{
         transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0) ;
+    } 
+}
+
+@keyframes moveBtn{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
     }
 
     100%{
@@ -153,4 +166,13 @@ padding: 30px;
 .btn:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+.btn-animated{
+    animation: moveBtn 1s ease-out .75s;
+    animation-fill-mode: backwards;
+    /* animation-name: moveBtn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s; */
 }
