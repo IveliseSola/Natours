@@ -4,6 +4,7 @@ $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485;
 $color-gray-dark:#777777;
 $color-white:#fff;
+$color-black:#000000;
 *,
 *::after,
 *::before {
@@ -36,24 +37,26 @@ box-sizing: border-box;
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0,100% 0,100% 75vh, 0 100%);
-}
 
-.header__logo-box{
+
+&__logo-box{
     position: absolute;
     top: 4rem;
     left: 4rem;
 } 
 
-.header__logo{
+&__logo{
     height: 3.5rem;
 }
 
-.header__text-box{
+&__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
 }
 
 .heading-primary{
@@ -141,12 +144,12 @@ box-sizing: border-box;
 
 .btn:hover{
     transform: translateY(3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2); 
+    box-shadow: 0 1rem 2rem rgba($color-black, .2); 
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); 
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2); 
 }
 
 .btn--white
