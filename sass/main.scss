@@ -64,9 +64,9 @@ box-sizing: border-box;
     text-transform: uppercase;
     backface-visibility: hidden; /* for shaking text in animation */
     margin-bottom: 6rem;
-}
 
-.heading-primary--main{
+
+&--main{
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -76,7 +76,7 @@ box-sizing: border-box;
     animation-timing-function: ease-out;
 }
 
-.heading-primary--sub{
+&--sub{
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -85,6 +85,8 @@ box-sizing: border-box;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
+}
+
 
 @keyframes moveInLeft{
     0%{
