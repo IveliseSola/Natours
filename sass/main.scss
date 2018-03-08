@@ -1,10 +1,19 @@
+@import "base/base.scss";
+@import "base/animations.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
 
-$color-primary: #55c57a;
-$color-primary-light:#7ed56f;
-$color-primary-dark:#28b485;
-$color-gray-dark:#777777;
-$color-white:#fff;
-$color-black:#000000;
+@import "abstracts/functions.scss";
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+
+@import "pages/home.scss";
+
+// @import "layouts/";
+
+// @import "components/";
+
+
 *,
 *::after,
 *::before {
